@@ -7,8 +7,7 @@ A website for a theoretical company.
 
 ## Usage
 
-Load the index.html page in your web-browser
-
+Go to [Meta Inc.](http://www.meta-inc.co)
 
 ## License
 
