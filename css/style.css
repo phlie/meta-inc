@@ -33,12 +33,12 @@ h1 {
 }
 
 h2 {
-    color: #ff0d57;
+    color: white;
     margin: 0px;
     margin-top: -23px;
     font-weight: normal;
     font-size: 3em;
-    border-bottom: solid 4px white;
+    border-bottom: solid 2px #26f7ff;
     margin-bottom: 10px;
 }
 
