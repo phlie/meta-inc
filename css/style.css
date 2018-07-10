@@ -1,6 +1,19 @@
+ /* Colors
+ Teal:  #33cca0;
+ Pink:  #ee2666;
+ White: #fce9e0;
+*/
+
+
 body, html {
     padding: 0;
     margin: 0;
+}
+
+
+/* Latest FireFox hide scrollbar */
+@-moz-document url-prefix() {
+    html,body{overflow: hidden !important;}
 }
 
 body {
@@ -21,41 +34,93 @@ body {
     /* width: 640px; */
     background-color: rgba(0, 0, 0, .6);
     padding: 5px 20px;
-    text-align: center;
+    height: 80%;
+    overflow: scroll;
+    -ms-overflow-style: none;   /* IE 10+ */
+    overflow: -moz-scrollbars-none; /* Older FireFox: ; */
+}
+
+
+/* Webkit hide scrollbar */
+::-webkit-scrollbar {
+    width: 0;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+
+}
+.meta-logo {
+    padding: 30px;
 }
 
 h1 {
-    color: #ff0d57;
-    font-size: 6.6em;
+    color: #33cca0;
+    font-size: 70px;
     font-family: 'Lobster', cursive;
     margin: 0px;
-    margin-bottom: 18px;
 }
 
 h2 {
-    color: white;
+    color: #fce9e0;
     margin: 0px;
-    margin-top: -23px;
     font-weight: normal;
-    font-size: 3em;
-    border-bottom: solid 2px #26f7ff;
+    font-size: 54px;
+    border-bottom: solid 4px #ee2666;
     margin-bottom: 10px;
 }
 
-.white {
-    color: white;
+h3 {
+    font-size: 50px;
+    border-bottom: solid 4px #ee2666;
 }
 
-.pink {
-    color: #ff0d57;
+
+.number {
+    color: #ee2666;
+}
+
+a {
+    color: #fce9e0;
+}
+
+a:visited {
+    color: none;
+
+}
+a:hover {
+    color: #ee2666;
+    text-decoration: none;
+}
+
+a:active {
+    color: #33cca0;
 }
 
 .row {
-    padding: 14px;
+    padding: 20px;
 }
+
+.teal {
+    color: #33cca0;
+}
+
+.pink {
+    color: #ee2666;
+}
+
+.logo-link:hover img {
+    border: solid 4px #ee2666;
+    border-radius: 20px;
+    background-color: black;
+}
+
 
 p {
     /* line-height: 150%; */
-    font-size: 2.3em;
-    color: white;
+    font-size: 32px;
+    color: #fce9e0;
+    line-height: 130%;
+}
+
+
+.blog-description {
+    padding-left: 80px;
 }
