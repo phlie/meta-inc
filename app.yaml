@@ -1,0 +1,28 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /blog/starting-a-startup/1-founding-an-idea
+  static_files: www/blog/starting-a-startup/1-founding-an-idea.html
+  upload: www/blog/starting-a-startup/1-founding-an-idea.html
+
+
+- url: /blog
+  static_files: www/blog/blog-posts.html
+  upload: www/blog/blog-posts.html
+
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
+
+- url: /(.*)
+  static_files: www/\1
+  upload: www/(.*)
+
